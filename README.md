@@ -12,7 +12,6 @@ The repository reproduces every quantitative figure of the main text and the Sup
 |---|---|
 | `fig1_panels.py` | Figure 1(b) single-object photon budget versus diameter, Figure 1(c) decision map at *d* = 0.5 µm. Defines the optical model (`Optics`), the coupling *G*(*d*) of Eq. (S14) and the budgets *N*<sub>F</sub>, *N*<sub>L</sub>; the other theory scripts import from it. |
 | `fig2_panels.py` | Figure 2: density crossover, regime map, axial *k*-space support, axial conditioning versus NA. |
-| `fig3abc_panels.py` | Figure 3(a)–(c) from the measured fluorescence and recovered-phase images; extracts *A*, *b*, β, ⟨φ⟩ and *G* with the resolution-cell convention. |
 | `fig3_analysis.py` | Figure 3(d)–(f) from `photon_series.xlsx`: free-slope fits of the photon series, photon costs at the target precision, size exponent, crossover diameters, efficiency ratios. |
 | `figS4_panels.py` | Figure S4: attainment of the bound in both arms (a) and Monte Carlo bias of the four-step estimator (b). |
 | `figS5_panels.py` | Figure S5: delivered-dose sensitivity analysis. |
@@ -42,7 +41,6 @@ pip install -r requirements.txt
 
 python fig1_panels.py                      # Fig_1b_budget.png, Fig_1c_map.png
 python fig2_panels.py                      # Figure_2.png and the four panels
-python fig3abc_panels.py --fluor fluor.npy --phase phase.npy --beta-report "3.0\pm0.3"
 python fig3_analysis.py photon_series.xlsx # Fig_3d, Fig_3e, Fig_3f
 python figS4_panels.py photon_series.xlsx  # Figure_S4.png
 python figS5_panels.py                     # Figure_S5.png
